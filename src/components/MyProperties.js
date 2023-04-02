@@ -10,7 +10,7 @@ function MyProperties() {
     const navigate = useNavigate()
 
     useEffect(() => {
-      fetch("/my-listings")
+      fetch("https://realtor-com.onrender.com/my-listings")
         .then((r) => r.json())
         .then(setMyListings);
     }, [item]);

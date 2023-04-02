@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import Login from './Login';
 import NavBar  from "./Navbar";
 import HomePage from './HomePage';
-// import AddListing from './AddListing';
 import MyProperties from './MyProperties';
 import UpdateListing from "./UpdateListing";
 
@@ -14,7 +13,7 @@ const [user, setUser]=useState(null)
 const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 useEffect(() => {
-  fetch("/me").then((response) => {
+  fetch("https://realtor-com.onrender.com/me").then((response) => {
     if (response.ok) {
       response.json().then((user) => setUser(user));
     }

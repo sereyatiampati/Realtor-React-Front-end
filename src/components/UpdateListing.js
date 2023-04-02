@@ -16,7 +16,7 @@ function UpdateListing() {
 
     useEffect(()=> {
         if (id==='new') return;
-        fetch(`/listings/${id}`)
+        fetch(`https://realtor-com.onrender.com/listings/${id}`)
         .then((r) => r.json())
         .then(({address, property_type, area_in_sqm, beds, baths, garages,price, image_url})=> {
                   setAddress(address);

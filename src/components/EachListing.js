@@ -5,7 +5,7 @@ function EachListing({listing, onDelete}) {
   const navigate = useNavigate()
 
   function handleDelete(id) {
-    fetch(`/listings/${id}`, { method: "DELETE" }).then((r) => {
+    fetch(`https://realtor-com.onrender.com/listings/${id}`, { method: "DELETE" }).then((r) => {
       if (r.ok) {
         console.log("Deleted")
         onDelete()

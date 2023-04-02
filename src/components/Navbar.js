@@ -8,7 +8,7 @@ function NavBar({user, setUser, isLoggedIn}){
   const navigate = useNavigate();
 
   function handleLogoutClick() {
-    fetch("/logout", { method: "DELETE" }).then((r) => {
+    fetch("https://realtor-com.onrender.com/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
         setUser(null);
         navigate('/login')
@@ -17,7 +17,7 @@ function NavBar({user, setUser, isLoggedIn}){
   }
 
   function handleDeleteAccount() {
-    fetch("/user", { method: "DELETE" }).then((r) => {
+    fetch("https://realtor-com.onrender.com/user", { method: "DELETE" }).then((r) => {
       if (r.ok) {
         setUser(null);
         navigate('/join-realtor.com')
@@ -29,7 +29,6 @@ function NavBar({user, setUser, isLoggedIn}){
   <nav class="navbar navbar-expand-lg navbar-light static-top" >
   <div class="container">
     <a class="navbar-brand text-brand" href="#"> <span style={{color: "#4A60A1"}}>Realtor</span><span style={{fontWeight: "300", fontSize: "1.3rem"}}>.com</span>
-    {/* <img src="https://www.apartments.com/a/4d9af0/content/images/apartments-for-rent-logo.png" alt="..." height="36"/> */}
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

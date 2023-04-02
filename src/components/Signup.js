@@ -23,7 +23,7 @@ function Signup({onLogin}) {
       function handleSignupSubmit(e) {
         e.preventDefault()
         setErrors([]);
-        fetch('/signup', {
+        fetch('https://realtor-com.onrender.com/signup', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
