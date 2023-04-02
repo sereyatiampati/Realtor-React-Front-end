@@ -18,7 +18,7 @@ function AddListing() {
       
       event.preventDefault();
       setErrors([])
-      fetch("/listings", {
+      fetch("https://realtor-com.onrender.com/listings", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -32,9 +32,9 @@ function EachListing({listing, onDelete}) {
                       <div class="price-box d-flex">
                         <span class="price-a">{property_type} | $ {price}.000</span>
                       </div>
-                      <a href="#" class="link-a">Click here to view
+                      {/* <a href="#" class="link-a">Click here to view
                         <span class="bi bi-chevron-right"></span>
-                      </a>
+                      </a> */}
                     </div>
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">

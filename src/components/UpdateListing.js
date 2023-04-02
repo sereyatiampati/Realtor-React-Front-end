@@ -36,7 +36,7 @@ function UpdateListing() {
       setErrors([])
       try {
         if (id === 'new') {
-            fetch("/listings", {
+            fetch("https://realtor-com.onrender.com/listings", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
@@ -69,7 +69,7 @@ function UpdateListing() {
               });
           }
           else{
-            fetch(`/listings/${id}`, {
+            fetch(`https://realtor-com.onrender.com/listings/${id}`, {
                 method: "PATCH",
                 headers: {
                   "Content-Type": "application/json",
