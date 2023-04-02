@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Realtor.com
+Created by Emilly Sereya Tiampati on 31/03/2023
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Realtor.com is a a website that provides a way to create, update, delete and retrieve listings/properties. It also provides a way to create and retrieve a user. It is built with React on the front-end and uses React Router for client side routing and Ruby on Rails API on the backend . 
 
-## Available Scripts
+### Figma Design
+[Figma](https://www.figma.com/file/KjCxyeq5ekDAotQpoqHbLf/REIS---Real-State-Listing-Figma?node-id=0-1&t=2RwzFTYsaICVL4C9-0)
 
-In the project directory, you can run:
+### Separate Repositories
+This project was deployed on different platforms namely [vercel](https://vercel.com/) and [render](https://render.com/)
 
-### `npm start`
+Front end
+* [Realtor.com React Client Gitbub Repository ](https://github.com/sereyatiampati/Realtor-React-Front-end)
+* [Deployed live link](https://realtor-sereyatiampati.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Back end
+* [Realtor.com Rails Server API Gitbub Repository ](https://github.com/sereyatiampati/Realtor-Rails-API-Backend)
+* [Deployed live link for one of the endpoints](https://realtor-com.onrender.com/listings) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Setup Requirements
+* Ruby 3.0.0 or higher
+* Rails 6.1.0 or higher
+* SQLite
+* NPM
+* Node.js
+* Web-browser of your choice
 
-### `npm test`
+### Technologies used in this project:
+- React
+- React Router
+- Bootstrap
+- CSS
+- HTML
+- Ruby on Rails
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How to Set up
+1. Clone this repository `git clone git@github.com:sereyatiampati/Realtor.com.git`
+2. Change directory  to the cloned repo `cd Realtor.com`
+3. Run `bundle install` to install the Rails API dependencies 
+4. Run `rails server` to start the server
+5. Run `npm install --prefix client` to install dependencies for the react frontend application
+6. Run `npm start --prefix client` to start the react frontend 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Features
+Users
+* ability to create/signup/register a user and login
+* persistent login using cookies
+* ability to update user information and view listings
+* ability to add a listing/property
+* ability to update listings added by the user
+* ability to delete a listing
+* ability to delete your own profile
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* responsive design
+* view best sellers in carousels
+* View listings
 
-### `npm run eject`
+## Front-end Sample Design
+* Landing page
+<img
+  src="./readme-images/homepage.png"
+  alt="Realtor.com Landing Page"
+  title="Homepage">
+* Login
+<img
+  src="./readme-images/login.png"
+  alt="Realtor.com Landing Page"
+  title="Homepage">
+* Signup
+<img
+  src="./readme-images/signup.png"
+  alt="Realtor.com Landing Page"
+  title="Homepage">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ### Contact
+  [See contacts](https://github.com/sereyatiampati)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  Copyright © 2023. All rights reserved.
