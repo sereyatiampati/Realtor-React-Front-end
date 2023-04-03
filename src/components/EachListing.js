@@ -1,4 +1,5 @@
 import {useNavigate } from "react-router-dom";
+import './item.css'
 
 function EachListing({listing, onDelete}) {
   const {id, address, property_type, area_in_sqm, beds, baths, garages, price, image_url} = listing

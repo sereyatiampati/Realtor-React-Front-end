@@ -1,4 +1,6 @@
+import './item.css'
 function Listing({listing}) {
+
   const {address, property_type, area_in_sqm, beds, baths, garages, price, image_url} = listing
     return (
         <>
