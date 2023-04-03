@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import Listing from './Listing';
+import Footer from './Footer';
 
 function AllProperties () {
     const [listings, setListings]=useState([])
@@ -12,6 +13,7 @@ function AllProperties () {
       }, []);
 
   return (
+    <div style={{height: '100vh', marginBottom: '0'}}>
 <section class="section-property section-t8" >
       <div >
         <div id="property-carousel" class="swiper">
@@ -21,7 +23,10 @@ function AllProperties () {
         </div>
         <div class="propery-carousel-pagination carousel-pagination"></div>
       </div>
-    </section>        
+      
+    </section>
+    <Footer></Footer>
+</div>
   )
 }
 

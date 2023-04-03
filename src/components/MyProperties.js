@@ -22,7 +22,7 @@ function MyProperties() {
 
     return(
         <>
-        <div id="property-carousel" class="swiper">
+        <div id="property-carousel" class="swiper" style={{marginBottom: '0', height: '100vh'}}>
           <div class="swiper-wrapper"  style={{display: 'flex', flexWrap: 'wrap', width: '100%', height: '100%', flexDirection: 'row', paddingRight: '0', justifyContent: 'center'}} >
             {
                 myListings.length > 0 ? (
